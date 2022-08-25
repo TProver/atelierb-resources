@@ -1,4 +1,4 @@
-This is an open-source repository for [Atelier B](https://www.atelierb.eu/en/atelier-b-support-maintenance/download-atelier-b/). It covers both software development with B and the B method, and system modelling with Event-B. It contains a number of useful resources to operate the Atelier B formal tool to model, verify by proof, and to generate C source code.\
+This is an open-source repository for [Atelier B](https://www.atelierb.eu/en/atelier-b-support-maintenance/download-atelier-b/). It covers both software development with B and the B method, and system modelling with Event-B. It contains a number of useful resources to operate the Atelier B formal tool to model, verify by proof, and to generate C source code.
 
 # Table of Contents
 
@@ -17,6 +17,8 @@ This is an open-source repository for [Atelier B](https://www.atelierb.eu/en/ate
 - **Part III:  Modelling with Event-B**
   * 20 [Introduction to Event-B](docs/20-introduction-to-event-b.md)  
 - **Part IV:  Proving with Atelier B**
+  * 30 [Introduction to Mathematical Proof](docs/30-introduction-to-mathematical-proof.md)
+  * 31 [Writing Mathematical Rules](docs/31-writing-mathematical-rules.md) 
 - **Part V:  Generating Code with Atelier B**
 - **Part VI:  The Rest of B**
   * [references](docs/references.md)
