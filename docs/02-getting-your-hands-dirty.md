@@ -40,17 +40,17 @@ Code generation is always a tricky way of producing code, as the code is generat
 
 Generating C source code requires a software development project. You should choose this option when you create your project. It is not possible to change the nature of a project after its creation.
 
-![Example of a project status](../.gitbook/assets/status.jpg)
+![Example of a project status](mages/status.jpg)
 
 Code can be generated in two modes:
 
 * **component mode**: you select a component in the component view, you right-click then select "code generator". The dialog below shows up. After having selected the proper translation profile, click OK. Unless you got error messages, the code has been generated into the lang/c directory of your project. If you select a machine, you get a c file and a header file (.h) with the same name as the selected component.
 
-![Component code generation dialog](../.gitbook/assets/component-generation.jpg)
+![Component code generation dialog](mages/component-generation.jpg)
 
 * **project mode**: you select your project in the workspaces view, you right-click the select "code generator". The dialog below shows up. After having selected the proper translation profile, the top-level component and possibly checked the "generate main" option, click OK.
 
-![Project code generation dialog](../.gitbook/assets/project-generation.jpg)
+![Project code generation dialog](.mages/project-generation.jpg)
 
 Several translation profiles are available:
 
