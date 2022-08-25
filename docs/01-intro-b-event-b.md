@@ -4,7 +4,9 @@ The B method for software and systems development together with the specificatio
 B has originally been developed as a successor to Z by Jean-Raymond Abrial in the 1990s, focusing on two key concepts: using refinement to gradually develop models and tool support for proof and model checking. At the time of writing, three classes of industrial applications of B have been established, which evolved from the original ideas:
 
 – **B for software development** (classical B): refine specifications until B0, a low-level subset of B, is reached and apply code generators
+
 – **B for system modelling** (Event-B): verify critical properties, understand why a system is correct
+
 – **B for data validation**: express properties in B and check data (possibly using a second tool-chain)
 
 
