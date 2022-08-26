@@ -27,6 +27,15 @@ Several documents are available:
 - [TRAINING B – Level 2: Practice B](pdfs/CLEARSY-Training-B-level-2.pdf)
 - [TRAINING B – Level 3: Prove B](pdfs/CLEARSY-Training-B-level-3.pdf)
 
+# Handbooks from MATISSE EU Project MATISSE
+
+This project was aimed at providing **M**ethodologies **a**nd **T**echnologies for **I**ndustrial **S**trength **S**ystems **E**ngineering. The focus was on B and Event-B. 3 Handbooks were writtent down, addressing different audiences:
+
+- [Board-level Storyboard](pdfs/MATISSE-Boardlevel-handbook-13.pdf)
+- [Project Manager's Handbook for Systems Construction](pdfs/MATISSE-ProjManagers-HandBook.pdf)
+- [Practitioners Handbook](pdfs/MATISSE-Practitioners-Handbook.pdf)
+
+The practitioners handbook provides a number of guidances when using B. 
 
 # MOOC on the B Method
 
