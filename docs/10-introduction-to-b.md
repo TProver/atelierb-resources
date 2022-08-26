@@ -29,7 +29,7 @@ Several documents are available:
 
 # Handbooks from MATISSE EU Project MATISSE
 
-This project was aimed at providing **M**ethodologies **a**nd **T**echnologies for **I**ndustrial **S**trength **S**ystems **E**ngineering. The focus was on B and Event-B. 3 Handbooks were writtent down, addressing different audiences:
+This project was aimed at providing **M**ethodologies **a**nd **T**echnologies for **I**ndustrial **S**trength **S**ystems **E**ngineering. The focus was on B and Event-B. 3 Handbooks were written down, addressing different audiences:
 
 - [Board-level Storyboard](pdfs/MATISSE-Boardlevel-handbook-13.pdf)
 - [Project Manager's Handbook for Systems Construction](pdfs/MATISSE-ProjManagers-HandBook.pdf)

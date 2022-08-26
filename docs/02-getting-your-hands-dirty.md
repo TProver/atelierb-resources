@@ -1,5 +1,11 @@
 # Getting Your Hands Dirty
 
+# Table of Contents
+
+- [Installation](#installation)
+- [Project Creation](#project-creation)
+- [Code Generation](#code-generation)
+
 ## Installation
 
 ## Project Creation
