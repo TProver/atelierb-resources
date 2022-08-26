@@ -21,6 +21,7 @@ If:
 - you are good at abstracting things
 - you want to control every line of your software
 - you found your teacher's mathematical demonstrations in high school interesting
+
 then it is more than probable that you are fit for B (and vice-versa).
 
 ## Why not B ? 
@@ -38,6 +39,7 @@ Moreover if:
 - you are not good at abstracting things
 - you tend to leave the writing of specifications to others and to "think with your thingers"
 - the fact that your software contains bugs does not prevent you from sleeping well at night
+
 then it is more than probable that you are not fit for B (and vice-versa).
 
 
