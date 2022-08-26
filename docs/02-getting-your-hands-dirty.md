@@ -50,7 +50,7 @@ The component M0 is added to the project.
 Let us edit the content of the file with a double-click on the component name on the status window.
 We are going to model a Boolean variable *b1*, that is initialised non-deterministically. We also specify on OPERATION *comp* modifying the variable *b1* such as the new value of *b1* is diffrent from the previous one.
 
-'''
+```
 MACHINE
     M0
 VARIABLES
@@ -65,7 +65,7 @@ OPERATIONS
         b1: (b1: BOOL & not(b1 = b1$0))
     END
 END
-'''
+```
 
 Once the model is typed in, save it with Ctrl-S. The editing window turns green seconds later, indicating that the model is correctly typed and provable.
 
@@ -78,7 +78,7 @@ Click Next, Next then Finish.
 
 Let us edit the content. b1 is now a CONCRETE_VARIABLE (required for code generation), initialised with TRUE. The OPERATION *comp* is implemented with a IF-THEN-ELSE.
 
-'''
+```
 IMPLEMENTATION M0_i
 REFINES M0
 CONCRETE_VARIABLES
@@ -95,7 +95,7 @@ OPERATIONS
         END
     END
 END
-'''
+```
 Once the model is typed in, save it with Ctrl-S. The editing window turns green seconds later.
 
 ## Proving models
@@ -114,7 +114,7 @@ Wait few seconds then select the project name, right-click and select "Open Fold
 The directory contains the two files *M0.mch* and *MO_i.imp*, and two directories "bdp" and "lang". Go to "lang/c".
 It contains the two files generated *M0.c* and *M0.h*.
 
-'''C
+```C
 #include "M0.h"
 
 /* Clause CONCRETE_CONSTANTS */
@@ -144,10 +144,10 @@ void M0__comp(void)
         M0__b1 = true;
     }
 }
-'''
+```
 
 
-'''C
+```C
 #ifndef _M0_h
 #define _M0_h
 
@@ -178,8 +178,7 @@ extern void M0__comp(void);
 
 
 #endif /* _M0_h */
-
-'''
+```
 
 
 
