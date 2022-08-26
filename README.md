@@ -9,7 +9,6 @@ This is an open-source repository for [Atelier B](https://www.atelierb.eu/en/ate
 - **Part I:  Introduction to Atelier B**
   * 1  [Introduction to B and Event-B](docs/01-intro-b-event-b.md)
   * 2  [Getting your hands dirty](docs/02-getting-your-hands-dirty.md)
-  * 3  [Quick Links](docs/03-quick-links.md)
 - **Part II:  Modelling with B**
   * 10 [Introduction to B](docs/10-introduction-to-b.md)  
   * 11  [Example: Fuel Level](docs/fuel-level.md)
@@ -20,6 +19,7 @@ This is an open-source repository for [Atelier B](https://www.atelierb.eu/en/ate
   * 30 [Introduction to Mathematical Proof](docs/30-introduction-to-mathematical-proof.md)
   * 31 [Writing Mathematical Rules](docs/31-writing-mathematical-rules.md) 
 - **Part V:  Generating Code with Atelier B**
+  * 40 [Introduction to Code Generation](docs/40-introduction-to-code-generation.md)
 - **Part VI:  The Rest of B**
   * [references](docs/references.md)
   * [troubleshooting](docs/troubleshooting.md)
