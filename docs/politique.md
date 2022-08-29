@@ -85,7 +85,7 @@ INITIALISATION
     currentOperation :: tOPERATION ||
     currentMode :: tMODE ||
     currentResult :: tRESULT 
-OPERATIONS
+EVENTS
 Init =
 ANY cell, operation WHERE
     cell : MEMORY &
@@ -107,9 +107,9 @@ END
 END 
 ```
 
-This specification needs to be completed with more operations and invariants. One operation and one invariant are given below.
+This specification needs to be completed with more events and invariants. One event and one invariant are given below.
 
-#### operation EXECUTE access in RAM
+#### event EXECUTE access in RAM
 
 If the current memory location is RAM, the memory cell contains CODE, and the current operation is EXECUTE, then access is granted.
 
