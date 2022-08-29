@@ -1,7 +1,5 @@
 # Switch
 
-
-
 ## Introduction
 
 This example demonstrates how to specify a stateless function and how to implement it.
