@@ -17,6 +17,7 @@ This is an open-source repository for [Atelier B](https://www.atelierb.eu/en/ate
   * 12  [Example: Switch](docs/switch.md)
 - **Part III:  Modelling with Event-B**
   * 20 [Introduction to Event-B](docs/20-introduction-to-event-b.md)  
+  * 21 [Example: Security Policy](docs/politique.md)
 - **Part IV:  Proving with Atelier B**
   * 30 [Introduction to Mathematical Proof](docs/30-introduction-to-mathematical-proof.md)
   * 31 [Writing Mathematical Rules](docs/31-writing-mathematical-rules.md) 
