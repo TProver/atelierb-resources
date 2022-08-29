@@ -43,4 +43,4 @@ The unbounded prover includes heuristics that could generate infinite execution.
 
 The structure of the prover, the mathematical rules database, the mechanisms constituting both bounded and unbounded provers, and their parameters were designed, defined, and optimised based on the B models developed by Matra from 1993 until 1998. Hence the proof performances were not guaranteed when symbols and predicates used are quite different from those in Meteor models. To improve automatic proof percentage, complementary mathematical rule databases are going to be used.
 There is another version on PR, without the optimised loader and called MonoLemma ML, that is
-actionable to demonstrate a single proof obligation. ML is used to power the Rodin platform as  [Atelier B provers plug-in]('https://wiki.event-b.org/index.php/Rodin Platform Releases').
+actionable to demonstrate a single proof obligation. ML is used to power the Rodin platform as  [Atelier B provers plug-in](https://wiki.event-b.org/index.php/Rodin\ Platform\ Releases).
