@@ -29,11 +29,14 @@ This is an open-source repository for [Atelier B](https://www.atelierb.eu/en/ate
 
 ## The B Files
 
-The [B code files]() are listed here:
+These files are the ones used in this repository. 
+To use them, first create a project (software development ou system modelling as required), then open the project, right click and select "add components". Navigate to the directory where you have downloaded the B files. Select the files you wanted to import. Click OK. The files are attached to your project.
+
+The [B code files](B) are listed here:
 
 | CH   | Filename                            | Description                                                            |
 |------|-------------------------------------|------------------------------------------------------------------------|
-| -    | [test.mch](B/test.mch)             | Test                                                                   |
+| 21    | [politique.sys](B/politique.sys)             | Test                                                                   |
 
 
 # Running the Code

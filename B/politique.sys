@@ -1,0 +1,50 @@
+/* politique
+* Author: lecom
+* Creation date: 29/08/2022
+*/
+SYSTEM
+    politique
+SETS
+    MEMORY;
+    tMEMORY={RAM, ROM_SECURE, ROM_PUBLIC};
+    tCONTENT={DATA, CODE};
+    tMODE={USER, SUPERVISOR};
+    tOPERATION={OP_READ, OP_WRITE, OP_EXECUTE, OP_NONE};
+    tRESULT={GRANTED, NOT_GRANTED}
+CONSTANTS
+    MEMORY_TYPE, MEMORY_CONTENT
+PROPERTIES
+    MEMORY_TYPE : MEMORY --> tMEMORY & 
+    MEMORY_CONTENT :  MEMORY --> tCONTENT
+VARIABLES
+    currentCell, currentOperation, currentMode, currentResult
+INVARIANT
+    currentCell : MEMORY &
+    currentOperation : tOPERATION &
+    currentMode : tMODE &
+    currentResult : tRESULT 
+INITIALISATION
+    currentCell :: MEMORY ||
+    currentOperation :: tOPERATION ||
+    currentMode :: tMODE ||
+    currentResult :: tRESULT 
+EVENTS
+    Init =
+    ANY cell, operation WHERE
+        cell : MEMORY &
+        operation : tOPERATION
+    THEN
+        currentCell := cell ||
+        currentOperation := operation ||
+        currentResult := NOT_GRANTED
+    END;
+    
+    ChangeMode =
+    ANY mode WHERE
+        mode : tMODE & not(mode=currentMode) &
+        currentOperation = OP_EXECUTE &
+        currentResult = GRANTED
+    THEN
+        currentMode := mode
+    END
+END
