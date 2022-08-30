@@ -33,8 +33,10 @@ The loader is designed to minimise PO loading/unloading. PO could have thousands
 The solver generates new hypotheses and transforms the goal in order to obtain ⊤ (represented with
 the predefined symbol btrue). If the solver is successful, the PO is considered proved. If not, the PO is unproved. A B project is valid only when 100% PO are proved. The solver, as well as most proof-oriented Atelier B tools, was developed with the THEORY language 2, close to PROLOG (but without cut) and able to parse B models. It is composed of an hypothesis processor and a goal processor. They are executed in sequence; a transition is fired when a processor cannot activate anymore any of its built-in mechanisms. The main idea is to simplify the goal while generating new hypotheses that will possibly match with leaf predicates in the proof tree (conditions or sub-goals in the mathematical rules).
 
-![](images/LT.jpg "Example of THEORY language items. Single letter identifiers are wildcards and can match with any expression. The leaf rule is executed if the two hypotheses exist (binhyp are guards). The equivalence rule replaces the current goal with two sub-goals. Finally the mechanism SimplifyDisjX simplifies the disjonction A or B from any occurrence of a and the result is in R. The mechanism cannot be validated in isolation and requires to take into account its environment, including programming
-conventions (some variables have to be properly set before calling)")
+| <img src="images/LT.jpg" width="800" > |
+|:--:|
+| Example of THEORY language items. Single letter identifiers are wildcards and can match with any expression. The leaf rule is executed if the two hypotheses exist (binhyp are guards). The equivalence rule replaces the current goal with two sub-goals. Finally the mechanism SimplifyDisjX simplifies the disjonction A or B from any occurrence of a and the result is in R. The mechanism cannot be validated in isolation and requires to take into account its environment, including programming
+conventions (some variables have to be properly set before calling) |
 
 ### Hypothesis processor. 
 The hypothesis processor is able to generate new hypotheses but not to modify existing
