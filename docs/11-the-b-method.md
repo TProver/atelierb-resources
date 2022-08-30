@@ -9,7 +9,7 @@
 
 ## The Process
 
-| ![](images/b-method.png) |
+| <img src="images/b-method.png" width="800" > |
 |:-:|
 | The B Method consists of several activities to perform in the right order. |
 
