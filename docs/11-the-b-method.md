@@ -45,6 +45,33 @@ The advanced settings allow to define:
 
 ### Open Project (B)
 
+When a project is open, the following informations are displayed:
+- the components: the B components (machine .mch, refinement .ref, implementation .imp) that are defined in the project
+- the definitions: the files (.def) containing the definitions usable by the project components 
+- the libraries: the B projects that can used by the current project
+- the source WD lemmas for each component: the proof obligations related to the well-definedness of the components
+
+The properties of a project can be displayed and modified:
+- the libraries, selected among the projects defined in the current workspace
+- the definition directories
+- if the tyepechecker enables extended SEES
+- the proof obligation generator to use. by default, the newer one is selected. However for history reason, you can also select *Legacy (<4.2)* (proof obligation generator) but most of the shiny features are not going to be available.
+- if the overflow proof obligations are generated (is the result of an arithmetic computation still an INT ?)
+- if the welldefinedness proof obligations are generated (am I using B operators outside of their domain of definition - like division by 0, acessing f(x) when f is not a function, etc.)
+- the setting of a timeout (in sesonds) for automatic proof (no proof will last more than this delay)
+- the setting of a timeout (in seconds) for the predicate prover
+- the support for Atelier B 3.6 and 3.7 prover
+- the use of a specific prover rule base
+- if the interactive commands have to be checked before use
+- the display of automatic and interactive proof number in status
+- the activation of the trace of user rule
+- the activation of the rule packages b1, s1, and p1
+- the external provers that can be actionned
+- the configuration of the prook kernel (krt) - for experts only. Use in case of huge project, when the prover emits memory allocation messages.
+- the AtelierB config file content
+
+
+
 ### Add Component (C)
 
 ### Import Project (K)
