@@ -53,7 +53,11 @@ The practitioners handbook provides a number of guidances when using B.
 
 A [MOOC](https://mooc.imd.ufrn.br/course/the-b-method) dedicated to the B method (https://mooc.imd.ufrn.br/course/the-b-method) is available to all. It contains 20 videos for a duration of 6h50, covering the basics of the method, from modeling to project management. The site hosts the models used for the videos as well as the proof files. The MOOC was realized in collaboration with the Instituto Metropole Digital / UFRN (Natal, Brazil).
 
+<!---
 ![](images/mooc.jpg)
+-->
+
+<img src="images/mooc.jpg" width="200">
 
 ## Repository of Formal Models
 
