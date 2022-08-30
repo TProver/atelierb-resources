@@ -21,9 +21,7 @@ From 1999 up to now, the proof kernel has been frozen as any modification could 
 
 The Automatic Prover PR was developed as no other proof tool was available in the early 90’s to fulfil requirements (R1: supported logic and language, R2: computation time per PO, R3: automatic proof efficiency). PR is made of two distinct parts: a loader and a solver.
 
-![](images/PR.jpg "Structure of PR")
-
-| <img src="images/PR.jpg" width="400" > |
+| <img src="images/PR.jpg" width="800" > |
 |:--:|
 | Structure of PR |
 
