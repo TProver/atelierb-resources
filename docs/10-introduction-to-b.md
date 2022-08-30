@@ -57,7 +57,7 @@ A [MOOC](https://mooc.imd.ufrn.br/course/the-b-method) dedicated to the B method
 ![](images/mooc.jpg)
 -->
 
-<img src="images/mooc.jpg" width="200">
+<img src="images/mooc.jpg" width="400">
 
 ## Repository of Formal Models
 
