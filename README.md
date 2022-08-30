@@ -13,8 +13,9 @@ This is an open-source repository for [Atelier B](https://www.atelierb.eu/en/ate
   * 2  [Getting your hands dirty](docs/02-getting-your-hands-dirty.md)
 - **Part II:  Modelling with B**
   * 10 [Introduction to B](docs/10-introduction-to-b.md)  
-  * 11  [Example: Fuel Level](docs/fuel-level.md)
-  * 12  [Example: Switch](docs/switch.md)
+  * 11 [The B Method](docs/11-the-b-method.md)
+  * 12  [Example: Fuel Level](docs/fuel-level.md)
+  * 13  [Example: Switch](docs/switch.md)
 - **Part III:  Modelling with Event-B**
   * 20 [Introduction to Event-B](docs/20-introduction-to-event-b.md)  
   * 21 [Example: Security Policy](docs/politique.md)
