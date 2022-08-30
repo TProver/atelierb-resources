@@ -4,7 +4,7 @@ The **B method** is a method of software development based on B, a tool-supporte
 
 [Atelier B tool](https://www.atelierb.eu/en/) implements the B method and has been used for safety critical software since 1998 with [Meteor](https://en.wikipedia.org/wiki/Paris_M%C3%A9tro_Line_14), the first automatic metro operated in Paris. Since then, more then 30% of the automatic metros worldwide make use of the B method for the onboard and trackside safety critical software, with the [Urbalis](https://www.clearsy.com/en/references/urbalis-evolution/) (Alstom) and Trainguard (Siemens) product lines. 
 
-| <img src="images/atb-history.jpg" width="800" > |
+| <img src="images/atb-history.jpg"> |
 |:--:|
 | Atelier B history covering the last 25 years. The tool is being developed and maintained continously. |
 
