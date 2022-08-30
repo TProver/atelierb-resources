@@ -73,6 +73,9 @@ Among the two configurations of the safety platform (for education / for industr
 - either [a development board](https://www.clearsy.com/en/components/calculateur-clearsy-safety-plateform/) to run the compiled programs or its [software simulator](https://github.com/CLEARSY/tutorial-ABZ-2021).
 
 The software simulator is available free of charge and without restrictions. It was demonstrated during a tutorial at the ABZ 2021 conference (see [tutorial video](https://www.youtube.com/watch?v=2IL_Wo2-0YM)).
+
+<img src="images/abz-tutorial.jpg" width="400">
+
 The added value of the CLEARSY Safety Platform is that students can "bring things to life" (see modelling variables change on the simulator or LEDs flash on the board). Hands-on courses and sessions have been given around the world for the past four years and this has been well received by:
 
 - theoretical profiles who can connect their abstract models to the physical world
