@@ -23,6 +23,10 @@ The Automatic Prover PR was developed as no other proof tool was available in th
 
 ![](images/PR.jpg "Structure of PR")
 
+| <img src="images/PR.jpg" width="400" > |
+|:--:|
+| Structure of PR |
+
 
 ### Loader. 
 The loader is designed to minimise PO loading/unloading. PO could have thousands hypotheses, so unloading all hypotheses from memory when moving to the next PO is not optimal. The hypotheses are grouped into packages, corresponding to the different clauses of model B. PR unloads only those hypotheses that are no longer used and keeps the others. PO file format was structured accordingly.
