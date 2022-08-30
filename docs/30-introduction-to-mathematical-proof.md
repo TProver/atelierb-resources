@@ -35,8 +35,7 @@ the predefined symbol btrue). If the solver is successful, the PO is considered 
 
 | <img src="images/LT.jpg" width="800" > |
 |:--:|
-| Example of THEORY language items. Single letter identifiers are wildcards and can match with any expression. The leaf rule is executed if the two hypotheses exist (binhyp are guards). The equivalence rule replaces the current goal with two sub-goals. Finally the mechanism SimplifyDisjX simplifies the disjonction A or B from any occurrence of a and the result is in R. The mechanism cannot be validated in isolation and requires to take into account its environment, including programming
-conventions (some variables have to be properly set before calling) |
+| Example of THEORY language items. Single letter identifiers are wildcards and can match with any expression. The leaf rule is executed if the two hypotheses exist (binhyp are guards). The equivalence rule replaces the current goal with two sub-goals. Finally the mechanism SimplifyDisjX simplifies the disjonction A or B from any occurrence of a and the result is in R. The mechanism cannot be validated in isolation and requires to take into account its environment, including programming conventions (some variables have to be properly set before calling) |
 
 ### Hypothesis processor. 
 The hypothesis processor is able to generate new hypotheses but not to modify existing
@@ -83,7 +82,9 @@ Proof-oriented commands can be saved as demonstration. These are the demonstrati
 These demonstrations are supposed to be as generic as possible, to be applied on other similar POs. In the interactive prover, when at least one PO has been demonstrated, the user is asked if these demonstrations could be saved in the User Pass, a specific part of the component proof files that only contains proof tactics (generic demonstrations). These demonstrations can be tried on the remaining POs of the current component.
 These tactics are ordered: the first one is tried on all unproved POs, the other ones on the remaining POs once the previous tactic has been applied. Naturally the most generic, efficient tactics have to be in the first places while the more specific and longest to execute have to positioned further down the list. In addition, it is possible to use filters to make the selection even more precise, by specifying the name of the operation and the form of the goal.
 
-![](images/filter.jg "Example of a proof-tactic filter, specifying the operation name, the shape of the goal, and the sequence of proof commands to apply")
+| <img src="images/filter.jpg" width="800" > |
+|:--:|
+| Example of a proof-tactic filter, specifying the operation name, the shape of the goal, and the sequence of proof commands to apply |
 
 ### Conservation of demonstrations. 
 A demonstration is attached to a proof obligation based on the local hypotheses, the goal, the operation name, and also its index (operation name.integer). When the B model is modified, the merger is a tool in charge of maintaining the link between the PO and the demonstration.
@@ -120,15 +121,21 @@ The mathematical rules that are not handled or proved by PP had to be verified m
 A form had to be filled with the source code of the rule, its manual translation into mathematical predicate, the verification of its correct typing and the absence of name collision between identifiers and quantified variables. Then a mathematical demonstration with no imposed format had to be provided. Each form was reviewed by a panel of about ten people from five different companies. The remarks made had to be taken into account by the author of the form and then the rule had to be reviewed again, as long as remarks remained. Finally a third party company was in charge on reviewing all forms and to evaluate if the demonstrations were convincing. The validation was completed when all manual demonstrations were deemed to be convincing. The forms and the evaluation report were added to the validation file.
 The validation of the rules was a long process, which lasted much longer than the 5 years of Atelier B Meteor’s development. Some errors were detected after 1998. Where possible, the rule was corrected and industry was invited to re-prove their projects. Most of the time, the rules were ”almost right”. Often a restriction on the application domain was missing. It was also detected that some rules were duplicated: as the validation of rules is unitary, this fact remained undetected for some time. Circumventing the problem required to replace the duplicated rule by a non-applicable rule.
 
-![](images/PO-proof.jpg "Proof tool GUI used to validate user defined rules. It allows to implement a cross validation algorithm based on a formal tool (Predicate Prover), and independent per review, that is accepted for safety demonstration by the railway standards.")
+| <img src="images/PO-proof.jpg" width="800" > |
+|:--:|
+| Proof tool GUI used to validate user defined rules. It allows to implement a cross validation algorithm based on a formal tool (Predicate Prover), and independent per review, that is accepted for safety demonstration by the railway standards. |
 
 During the development of PP, a first attempt to verify the rules database occurred in 1995. 1535 rules handled by the tool, the other rules were not processed because of functional limitations (sequences not supported, several guards not yet translated). 59 were detected false, 55 were corrected and verified by PP successfully, 4 were removed because they were wrong (or too specific). A dedicated proof tool with GUI was designed and integrated to Atelier B to provide a systematic verification framework.
 
-![](images/PP.jpg "Example of PP inference rules. The rule BOOL31 replaces one goal by another. The rule ECTR6 is a success if it exists one equality F=E in hypothesis such as, by replacing E by F in P, we obtain R, not(R) being in hypothesis.")
+| <img src="images/PP.jpg" width="800" > |
+|:--:|
+| Example of PP inference rules. The rule BOOL31 replaces one goal by another. The rule ECTR6 is a success if it exists one equality F=E in hypothesis such as, by replacing E by F in P, we obtain R, not(R) being in hypothesis. |
 
 Finally a few tens of rules have been corrected since 1998. Their detection is often due to incorrect models proved successfully. Backward analysis allows to locate the origin of the error, if it is a rule. If the cause is a faulty mechanism, then the analysis is our responsibility, as the code of the mechanisms is not accessible through the tool, unlike the mathematical rules.
 
-![](images/BDR-rules.jpg "Rules found incorrect in 1995. The rule InSetXY.35 is incorrect as the first searched hypothesis should be b ≤ min(A). The typing of the predicate to prove ¬(n..p∩a)=∅ is oncorrect (the brackets are misplaced).")
+| <img src="images/BDR-rules.jpg" width="800" > |
+|:--:|
+| Rules found incorrect in 1995. The rule InSetXY.35 is incorrect as the first searched hypothesis should be b ≤ min(A). The typing of the predicate to prove ¬(n..p∩a)=∅ is oncorrect (the brackets are misplaced). |
 
 ## Improving with Research and Development
 
@@ -144,7 +151,9 @@ In the early 2000’s, formal data validation started to become more widespread 
 BWare (2012-2016) was an industrial research project aimed at providing a mechanised framework to support the automated verification of proof obligations. The adopted methodology consists in building a generic verification platform relying on different automated theorem provers, such as first order provers and SMT solvers. This generic platform is built upon the Why3 platform for deductive program verification. The considered first order provers are Zenon and iProver Modulo, while we opted for the Alt-Ergo SMT solver. In this framework, B proof obligations are translated by a specific tool into Why3 files, which are compatible with a Why3 encoding of the B set theory. From these files, Why3 can produce (by means of appropriate drivers) the proof obligations for the automated theorem provers, using the TPTP format for Zenon and iProver Modulo, and a native format for Alt-Ergo. This translation together with the encoding of the B set theory aims to generate valid statements that are appropriate for the automated theorem provers, i.e. whose proofs can be found by these provers. Finally, once proofs have been found by these tools, some of these provers can generate proof objects to be verified by proof checkers. This is the case of Zenon, which can produce proof objects for Coq and Dedukti, and iProver Modulo, which can also produce proof objects for Dedukti. An initial bench of 13,000 proof obligations, issued from several industrial projects, was constituted to evaluate the BWare platform. Atelier B PR prover was able to demonstrate 85% of them, Alt-Ergo 58%, iProver Modulo 19 %, and Zenon less than 1%. As can be observed, the first order provers encounter difficulties, which can be explained by the fact that these provers do not know the B set theory. At the end of the project, Alt-Ergo was able to demonstrate 98% of the PO, Zenon 95%, and iProver 28%. We also completed the set of provers: CVC4 was able to demonstrate 94% of the PO, Z3 84%, Vampire 78%, and E 61%. It appears that the project and the supply of POs has improved the performance of some provers. In the case of Alt-Ergo, the remaining POs are existential and require human intelligence
 to prove.
 
-![](images/bware.jpg "The BWare Platform for the Automated Verification of B Proof Obligations.")
+| <img src="images/bware.jpg" width="800" > |
+|:--:|
+| The BWare Platform for the Automated Verification of B Proof Obligations. |
 
 ### Alt-Ergo. LCHIP (2016-2020) was an industrial project aimed at developing a safety computer programmed
 with B and with enhanced proof capabilities. Alt-Ergo prover was selected from the excellent results obtained during the project BWare. One possibility for improvement was to specialise the production of the Why3 to exploit Alt-Ergo strong points. However the input B models, issued from the safety library, were quite different (lower level modelling) with more arithmetic and bit-wise Boolean functions.
