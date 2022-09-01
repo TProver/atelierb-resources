@@ -51,15 +51,15 @@ Below is an example of MANIFEST file:
 ## PatchProver
 It is a text file with THEORY language content. To enable its use, create a file PatchProver (case sensitive) in the *bdp* directory of a project. It is loaded in memory only once when Atelier B project is open. If the PatchProver file is modified, it is required to close the project and to reopen it. It is also recommended to unprove the project and to prove it again, as the behaviour of the proof kernel has probably changed.
 The file contains up to 16 theories:
-- PatchProverB<i>: rules applied Before the main prover rules and mechanisms. The parameter i corresponds to one of the 4 forces avaliable (0, 1, 2, and 3)
-- PatchProverA<i>: rules applied After the main prover rules and mechanisms.
-- PatchProverH<i>: rules applied on the conjonctive formula of each set of hypotheses loaded with force <i>.
+- PatchProverB**i**: rules applied Before the main prover rules and mechanisms. The parameter **i** corresponds to one of the 4 forces avaliable (0, 1, 2, and 3)
+- PatchProverA**i**: rules applied After the main prover rules and mechanisms.
+- PatchProverH**i**: rules applied on the conjonctive formula of each set of hypotheses loaded with force **i**.
 
 
 ## AtelierB
-It is a text file that contains configuration parameters, one per line, following the syntax: <category>\*<tool>\*<parameter name>: <value>
+It is a text file that contains configuration parameters, one per line, following the syntax: **category** \* **tool** \* **parameter name**: *value*
 There are several AtelierB files:
-- at Atelier B level: defined for all projects - located at <Installation Directory>
+- at Atelier B level: defined for all projects - located at [Installation Directory](#installation-directory)
 - at project level: defined for project, overload projects parameters - located in the *bdp* directory of the project.
 
 Example of AtelierB file (partial):
