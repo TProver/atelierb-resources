@@ -31,8 +31,8 @@ There are two functions to activate this feature:
 
 Below is an example of MANIFEST file:
 
-```
-<project>xml
+```xml
+<project>
  <add_file path="r_src/csp_safetyFlasher.mch"/>
  <add_file path="r_src/csp_safetyFlasher_2r.ref"/>
  <add_file path="r_src/csp_safetyFlasher_3r.ref"/>
@@ -49,5 +49,33 @@ Below is an example of MANIFEST file:
 ```
 
 ## PatchProver
+It is a text file with THEORY language content. To enable its use, create a file PatchProver (case sensitive) in the *bdp* directory of a project. It is loaded in memory only once when Atelier B project is open. If the PatchProver file is modified, it is required to close the project and to reopen it. It is also recommended to unprove the project and to prove it again, as the behaviour of the proof kernel has probably changed.
+The file contains up to 16 theories:
+- PatchProverB<i>: rules applied Before the main prover rules and mechanisms. The parameter i corresponds to one of the 4 forces avaliable (0, 1, 2, and 3)
+- PatchProverA<i>: rules applied After the main prover rules and mechanisms.
+- PatchProverH<i>: rules applied on the conjonctive formula of each set of hypotheses loaded with force <i>.
+
 
 ## AtelierB
+It is a text file that contains configuration parameters, one per line, following the syntax: <category>*<tool>*<parameter name>: <value>
+There are several AtelierB files:
+- at Atelier B level: defined for all projects - located at <Installation Directory>
+- at project level: defined for project, overload projects parameters - located in the *bdp* directory of the project.
+
+Example of AtelierB file (partial):
+```
+===========================================================================
+! TypeChecker Resource : Enable Local Operations
+!===========================================================================
+ATB*TC*Enable_Local_Operations:TRUE
+!===========================================================================
+! AtelierB Global resources
+!===========================================================================
+! Tools resources
+ATB*ATB*Logic_Solver_Command:krt -a c70000d3000e100g10000h10000m10000000n130000o110400s60000t1100x5000y5500
+ATB*ATB*TypeChecker_Command:TC.kin
+ATB*ATB*Xref_Command:xref
+ATB*ATB*Proof_Obligations_Generator_Command:PO.kin
+ATB*ATB*Proof_Obligations_Generator_NG_Command:pog
+ATB*ATB*Proof_Obligations_Generator_NG:TRUE
+```
