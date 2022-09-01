@@ -33,6 +33,7 @@ This project location contains two sub-directories:
 - *bdp*: the project database that will contain the project description and all the files required for activities except for code generation
 - *lang*: the translation directory that will contain the C source code generated from project B implementations.
 It is good practice to create both sub-directories prior to create the project. With the "depends from bdp location" ticked, if the *bdp* directory is selected by the user, the *lang* directory will be automatically filled.
+To directly access the project location, right click on the project then select "open folder".
 
 The text encoding can be chosen among a list of available encodings. By default, it is UTF-8.
 The definition of the concrete set INT, representing the implementable Integers in the program, can be selected. It shapes the proof obligations associated to INT. By default, it is defined as (-2147483647 .. 2147483647).
@@ -51,7 +52,7 @@ When a project is open, the following informations are displayed:
 - the libraries: the B projects that can used by the current project
 - the source WD lemmas for each component: the proof obligations related to the well-definedness of the components
 
-The properties of a project can be displayed and modified:
+The properties of a project can be displayed and modified (most of the time, you do not need to modify anything in the configuration):
 - the libraries, selected among the projects defined in the current workspace
 - the definition directories
 - if the tyepechecker enables extended SEES
@@ -69,8 +70,6 @@ The properties of a project can be displayed and modified:
 - the external provers that can be actionned
 - the configuration of the prook kernel (krt) - for experts only. Use in case of huge project, when the prover emits memory allocation messages.
 - the AtelierB config file content
-
-
 
 ### Add Component (C)
 
