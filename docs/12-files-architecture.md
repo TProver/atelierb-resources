@@ -26,8 +26,8 @@ If you have defined extra workspaces, these workspaces host similar Projects Dat
 It is a text file containing the list of files (machine, refinement, implementation - relative path) part of a B project.
 It allows to easily recreate B projects without having to add the B files manually.
 There are two functions to activate this feature:
-- create a project (checkbox "create from a Manifest")
-- create and update a Manifest (project menu item "synchronize with a Manifest")
+- create a project (checkbox "create from a Manifest"): a MANIFEST file saved previously is used to populate a project with B files.
+- create and update a Manifest (project menu item "synchronize with a Manifest"): a MANIFEST file is created, initialised, then updated every time a B file is added or removed.
 
 Below is an example of MANIFEST file:
 
