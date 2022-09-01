@@ -61,7 +61,7 @@ It is a text file that contains configuration parameters, one per line, followin
 > **category**\***tool**\***parameter name**: *value*
 
 There are several AtelierB files:
-- at Atelier B level: defined for all projects - located at [Installation Directory](#installation-directory)
+- at Atelier B level: defined for all projects - located in [Installation Directory](#installation-directory)
 - at project level: defined for project, overload projects parameters - located in the *bdp* directory of the project.
 
 Example of AtelierB file (partial):
