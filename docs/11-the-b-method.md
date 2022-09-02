@@ -68,14 +68,47 @@ The properties of a project can be displayed and modified (most of the time, you
 - the activation of the trace of user rule
 - the activation of the rule packages b1, s1, and p1
 - the external provers that can be actionned
-- the configuration of the prook kernel (krt) - for experts only. Use in case of huge project, when the prover emits memory allocation messages.
+- the configuration of the proof kernel (krt) - for experts only. Use in case of huge project, when the prover emits memory allocation messages.
 - the AtelierB config file content
 
 ### Add Component (C)
+When a project is open, components can be added or removed. Components are either machine (specification), refinement, or implementation. A *refinement column* contains a machine (mandatory), 0 or more refinements, 0 or 1 implementation. 
+
+If the machine has no refinement nor implementation, it means that it is a *basic machine*, a machine used for interfacing the B project with third party software.
+
+It is a good practice to distinguish *context machines* (machines containing only SETS and CONSTANTS) from regular machines (that do not contain SETS and CONSTANTS definitions, but SEES context machines).
+
+SETS and CONCRETE_CONSTANTS need to be valued in context machine implementation, to provide a value but also to demonstrate that their specification is feasible.
+
+When creating the component, a name and a location are required. When creating a refinement or an implementation, selecting the refined component allows to name automatically the component created and to provide some contents.
+Keep in mind that in a refinement column, OPERATIONS need to keep their exact signature all along (same parameter names, types, and order). Input parameters and returned values have to be implementable (B0 compliant), i.e. an OPERATION you want to generate code for cannot return a set for example.
+
+Project can also be populated with existing files through a [MANIFEST](12-files-architecture.md#manifest-file).
 
 ### Import Project (K)
+To import a project [saved as an archive](#archive-project), you need to select:
+- a workspace where the project is going to be imported, 
+- the archive file previously saved,
+- the new name for the imported project,
+- the repository where you want the project to be located when restored.
+
 
 ### Archive Project (L)
+To create an archive of a project, the target project has to be open.
+The archive generated has .arc extension. It is a zip file structured as follows: 
+- *bdp* directory containing the techical files issued from typecheck and proof analysis, as well as interactive proof. 
+- the *lang* directory containing the code generated, 
+- *src* directory containing B models and definitions, 
+- *MANIFEST* file.
+
+3 kinds of archive are available:
+- source code only: save MANIFEST + src
+- source code + proof files: : save MANIFEST + src + bdp
+- whole project: : save MANIFEST + src + bdp + lang
+
+Once the archive is generated, the project is closed.
+
+
 
 ## Activity Proof
 
