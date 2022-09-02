@@ -85,6 +85,8 @@ Keep in mind that in a refinement column, OPERATIONS need to keep their exact si
 
 Project can also be populated with existing files through a [MANIFEST](12-files-architecture.md#manifest-file).
 
+### Edit Component (D)
+
 ### Import Project (K)
 To import a project [saved as an archive](#archive-project), you need to select:
 - a workspace where the project is going to be imported, 
@@ -109,4 +111,19 @@ The archive generated has .arc extension. It is a zip file structured as follows
 
 ## Activity Proof
 
+### Control Type (E)
+
+### Generate Proof Obligations (F)
+
+### Automatic Proof (G)
+
+### Interactive Proof (H)
+
 ## Activity Code Generation
+
+### Control Implementation (I)
+
+### Generate Source Code (J)
+
+
+
