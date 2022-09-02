@@ -21,7 +21,7 @@ To create a project, you can either:
 
 The 2-step project creation wizard show up.
 
-| <img src="images/create-project-1.jpg" width="600" > |
+| <img src="images/create-project-1.jpg" width="400" > |
 |:--:|
 | First step of a project creation |
 
