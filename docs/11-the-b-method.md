@@ -106,9 +106,6 @@ The archive generated has .arc extension. It is a zip file structured as follows
 - source code + proof files: : save MANIFEST + src + bdp
 - whole project: : save MANIFEST + src + bdp + lang
 
-Once the archive is generated, the project is closed.
-
-
 
 ## Activity Proof
 
