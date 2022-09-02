@@ -122,7 +122,7 @@ Triggering [Generate Proof Obligations](#generate-proof-obligations) or [Automat
 ### Generate Proof Obligations (F)
 Generating proof obligation for model(s) consists in selecting the target model(s) and to either click on the blue "Po" button, or to type Ctrl+P. 
 
-| <img src="images/pogenerating.jpg" width="400" > |
+| <img src="images/pogenerating.jpg" width="800" > |
 |:--:|
 | Generating Proof Obligations for multiple components. |
 
@@ -147,7 +147,7 @@ By default, their generation is disabled as it implies more time to generate pro
 
 ### Automatic Proof (G)
 
-| <img src="images/proving.jpg" width="400" > |
+| <img src="images/proving.jpg" width="800" > |
 |:--:|
 | Proving multiple components. |
 
