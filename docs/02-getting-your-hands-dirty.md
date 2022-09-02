@@ -21,7 +21,7 @@ To create a project, you can either:
 
 The 2-step project creation wizard show up.
 
-| <img src="images/create-project-1.jpg" width="800" > |
+| <img src="images/create-project-1.jpg" width="600" > |
 |:--:|
 | First step of a project creation |
 
@@ -29,7 +29,7 @@ Leave wokspace as local (default). Type in a project name. Select a project type
 
 Click Next than click Finish (no need to modify default parameters).
 
-| <img src="images/create-project-2.jpg" width="800" > |
+| <img src="images/create-project-2.jpg" width="600" > |
 |:--:|
 | The project database contains the files used for the various modelling and proof activities. The translation directory contains the source code generated from the B models. |
 
@@ -51,7 +51,7 @@ A window shows up. You need to enter 3 informations: the name, the type (here it
 Enter M0 as name - the file is going to be saved as *M0.mch*. Select Next then Finish.
 The component M0 is added to the project.
 
-| <img src="images/M0-initial-status.jpg" width="800" > |
+| <img src="images/M0-initial-status.jpg" width="600" > |
 |:--:|
 | Project status when component M0 has just been created. |
 
@@ -113,7 +113,7 @@ Once the model is typed in, save it with Ctrl-S. The editing window turns green 
 Select the two components in the status window, press the blue button F0 (Automatic Proof Force 0).
 After few seconds, the status window is updated with:
 
-| <img src="images/M0-proved.jpg" width="800" > |
+| <img src="images/M0-proved.jpg" width="600" > |
 |:--:|
 | The two components are fully proved automatically. |
 
