@@ -4,9 +4,9 @@
 
 - [Installation](#installation)
 - [Project Creation](#project-creation)
-- [Adding a specification model]
-- [Adding an implementation model]
-- [Proving models]
+- [Adding a specification model](#adding-a-specification-model)
+- [Adding an implementation model](#adding-an-implementation-model)
+- [Proving models](#proving-models)
 - [Code Generation](#code-generation)
 
 ## Installation
@@ -21,17 +21,23 @@ To create a project, you can either:
 
 The 2-step project creation wizard show up.
 
-![First step of a project creation](images/create-project-1.jpg)
+| <img src="images/create-project-1.jpg" width="800" > |
+|:--:|
+| First step of a project creation |
 
 Leave wokspace as local (default). Type in a project name. Select a project type: either <mark style="color:blue;">software development</mark> or <mark style="color:blue;">system modelling</mark>.
 
 Click Next than click Finish (no need to modify default parameters).
 
-![The project database contains the files used for the various modelling and proof activities. The translation directory contains the source code generated from the B models.](images/create-project-2.jpg)
+| <img src="images/create-project-2.jpg" width="800" > |
+|:--:|
+| The project database contains the files used for the various modelling and proof activities. The translation directory contains the source code generated from the B models. |
 
 Finally the project is created, named _<mark style="color:blue;">first</mark>_, and empty.
 
-![](images/create-project-3.jpg)
+| <img src="images/create-project-3.jpg" width="800" > |
+|:--:|
+| Atelier B main window when the project **first** has just been created empty. |
 
 ## Adding a specification model
 
@@ -45,7 +51,9 @@ A window shows up. You need to enter 3 informations: the name, the type (here it
 Enter M0 as name - the file is going to be saved as *M0.mch*. Select Next then Finish.
 The component M0 is added to the project.
 
-![](images/M0-initial-status.jpg)
+| <img src="images/M0-initial-status.jpg" width="800" > |
+|:--:|
+| Project status when component M0 has just been created. |
 
 Let us edit the content of the file with a double-click on the component name on the status window.
 We are going to model a Boolean variable *b1*, that is initialised non-deterministically. We also specify on OPERATION *comp* modifying the variable *b1* such as the new value of *b1* is diffrent from the previous one.
@@ -69,7 +77,9 @@ END
 
 Once the model is typed in, save it with Ctrl-S. The editing window turns green seconds later, indicating that the model is correctly typed and provable.
 
-![](images/M0-saved.jpg)
+| <img src="images/M0-saved.jpg" width="800" > |
+|:--:|
+| Model editor displaying color information about proof status. Green is proved, red is not proved. |
 
 ## Adding an implementation model
 
@@ -100,10 +110,13 @@ Once the model is typed in, save it with Ctrl-S. The editing window turns green 
 
 ## Proving models
 
-Select the two components in the status window, press the blue button F0 (Automatic Proff Force 0).
+Select the two components in the status window, press the blue button F0 (Automatic Proof Force 0).
 After few seconds, the status window is updated with:
 
-![](images/M0-proved.jpg)
+| <img src="images/M0-proved.jpg" width="800" > |
+|:--:|
+| The two components are fully proved automatically. |
+
 
 It reads that both *M0* and *MO_i* are typechecked, their proof obligations have been generated. *M0* has no proof obligations associated while *M0_i* has 2. These 2 proof obligations have been proved. The 2 components are proved to be correct.
 
