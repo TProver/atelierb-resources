@@ -86,6 +86,26 @@ Keep in mind that in a refinement column, OPERATIONS need to keep their exact si
 Project can also be populated with existing files through a [MANIFEST](12-files-architecture.md#manifest-file).
 
 ### Edit Component (D)
+To edit a component, double-click on the component name in the component list. A window shows up with the B model in the central pane. The "display proof in the editor" option in the project Atelier B preferences (section "internal editor") allows to show a colour code in the margin (green is "proved", red is "not proved", grey is "typecheck problem") together with the number of proof obligations associated to each line and the number of proof obligations automatically proved. This way, the modeller is able to identify what part of the model concentrate the complexity and allows to reshape the model to ease the proof.
+
+| <img src="images/atb-editor.jpg" width="600" > |
+|:-:|
+| The B model editor displays the model and its proof status, an outline, and the list and body of its proof obligations. |
+
+When selecting a variable, a constant or an operation, it is possible to:
+- jump to its definition (shortcut: F3)
+- jump to its abstraction (shortcut: F2)
+- jump to its refinement (shortcut: F4)
+- jump to abstraction component (shortcut: shift + F2)
+- jump to refined component (shortcut: shift + F4)
+
+Moreover by selecting an operation and accessing the contextual menu, it is possible to list in the pane "file search results":
+- find all uses
+- find called operations from the implementation
+
+The outline view displays the variables, constants and operations defined in the current component. The "B symbols" pane contains the mathematical symbols that can be used for the modelling - double-clicking on a symbol inserts it in the model as an ascii symbol (functions and relations, arithmetic, sequences, logical operators, sets, and substitutions.
+
+The "selected PO" field allows to highlight the parts of the model that are related to the seelcted proof obligation.
 
 ### Import Project (K)
 To import a project [saved as an archive](#archive-project), you need to select:
